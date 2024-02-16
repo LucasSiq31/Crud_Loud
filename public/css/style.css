@@ -1,0 +1,102 @@
+body{
+    margin: 0 auto;
+    font-size: larger;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+header img{
+    width: 300px;
+}
+header{
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
+.container{
+    display: flex;
+}
+nav{
+    width: 10%;
+    background-color: rgb(223, 223, 223);
+    margin: 50px;
+    height: 300px;
+    padding: 40px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+nav a{
+    text-decoration: none;
+    color: green;
+}
+
+hr{
+    border: 1px solid grey;
+}
+main hr{
+    border: 1px solid rgb(201, 201, 201);
+    margin: 30px 0px 30px 0px;
+}
+.destaque{
+    color: white;
+    background-color: #58cc5a;
+    padding: 10px;
+    border-radius: 15px;
+}
+main{
+    margin: 50px 0px 0px 50px;
+}
+input{
+    border: solid 1px #58cc5a;
+    border-radius: 10px;
+    height: 25px;
+    padding: 5px;
+}
+input[type=button], button{
+    border: solid 1px #58cc5a;
+    border-radius: 10px;
+    height: 37px; 
+    background-color: #58cc5a;
+    color: white;
+}
+
+input[type=button]:hover, button:hover{
+    border: solid 1px #58cc5a;
+    border-radius: 10px;
+    height: 37px; 
+    background-color: white;
+    color: #58cc5a;
+    transition: 0.3s;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.inputID{
+    width: 250px;
+}
+
+.enviar{
+    width: 100%;
+}
+.buscaID{
+    margin-bottom: 15px;
+}
+
+th,td{
+    border: 1px solid #58cc5a;
+    text-align: left;
+    padding: 8px;
+    margin: 0px;
+}
+
+th{
+    background-color: #58cc5a;
+    color: white;
+}
+table{
+    border: 1px solid #58cc5a;
+    border-collapse: collapse;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Método CRUD - POST</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="img/loud-logo.png" alt="" />
+    </header>
+
+    <div class="container">
+      <nav>
+        <div>
+          <h2>Menu</h2>
+          <hr />
+        </div>
+
+        <a href="index.html">GET</a>
+        <a class="destaque" href="post.html">POST</a>
+        <a href="put.html">PUT</a>
+        <a href="delete.html">DELETE</a>
+      </nav>
+      <main>
+        <h1>Método POST - CRUD</h1>
+
+        <div class="input">
+          <label>Nickname:</label>
+          <input type="text" id="nickname" />
+        </div>
+        
+        <div class="input">
+          <label>Nome:</label>
+          <input type="text" id="nome" />
+        </div>
+        
+        <div class="input">
+          <label>Nacionalidade:</label>
+          <input type="text" id="nacionalidade" />
+        </div>
+        
+        <div class="input">
+          <label>Agente mais Jogado:</label>
+          <input type="text" id="agente" />
+        </div>
+
+        <input class="enviar" type="button" onclick="enviarDados()" value="Enviar" />
+        
+      </main>
+    </div>
+
+    <script>
+      //POST
+      function enviarDados() {
+        const nickname = document.getElementById("nickname").value;
+        const nome = document.getElementById("nome").value;
+        const nacionalidade = document.getElementById("nacionalidade").value;
+        const agente = document.getElementById("agente").value;
+
+        fetch("pessoas", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            nickname: nickname,
+            nome: nome,
+            nacionalidade: nacionalidade,
+            agente: agente,
+          }),
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            // limpa os inputs do formulário
+            document.getElementById("nickname").value = "";
+            document.getElementById("nome").value = "";
+            document.getElementById("nacionalidade").value = "";
+            document.getElementById("agente").value = "";
+          });
+      }
+    </script>
+  </body>
+</html>
