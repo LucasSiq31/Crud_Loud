@@ -1,22 +1,41 @@
 {
   "pessoas": [
     {
-      "nome": "Paulo",
-      "idade": "31",
-      "cpf": "111.222.333-44",
+      "nickname": "Less",
+      "nome": "Felipe basso",
+      "nacionalidade": "Brasileiro",
+      "agente": "Kill Joy",
+      "id": 1
+    },
+    {
+      "nickname": "Sahdaak",
+      "nome": "Matias Delipetro",
+      "nacionalidade": "Argentino",
+      "agente": "Skye",
+      "id": 2
+    },
+    {
+      "nickname": "Cauanzin",
+      "nome": "Cauan Pereira",
+      "nacionalidade": "Brasileiro",
+      "agente": "Reyna",
+      "id": 3
+    },
+    {
+      "nickname": "Tuyz",
+      "nome": "Arthur Vieira",
+      "nacionalidade": "Brasileiro",
+      "agente": "Omem",
       "id": 4
     },
     {
-      "nome": "Tiago",
-      "idade": "70",
-      "cpf": "999.888.777-66",
+      "nickname": "Qck",
+      "nome": "Gabriel Lima",
+      "nacionalidade": "Brasileiro",
+      "agente": "Viper",
       "id": 5
-    },
-    {
-      "nome": "Lucas",
-      "idade": "16",
-      "cpf": "387.121.938-23",
-      "id": 6
     }
+    
+    
   ]
 }
